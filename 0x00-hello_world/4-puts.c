@@ -3,7 +3,7 @@
 /**
  * main - prints a string using the puts function
  *
- * Retun - 0 if successful
+ * Return: 0 if successful
  */
 
 int main(void)
