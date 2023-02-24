@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
- * print_line - prints n numbers of '_' followed by a new line
- * @n: number
+ * print_line - prints line
+ * @n: parameter
  */
 
 void print_line(int n)
 {
-	if (n == 0)
-		_putchar('\n');
-	else
+	int i = 1;
+
+	while (i <= n)
 	{
-		while (n != 0)
-		{
-			_putchar('_');
-			n--;
-		}
-		_putchar('\n');
+		_putchar(95);
+		i++;
 	}
+	_putchar('\n');
 }
