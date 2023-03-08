@@ -6,6 +6,7 @@
  * @c: character we are searching for
  *
  * Return: program returns pointer to the location of the first occurrence of c
+ * or NULL if there is no occurrence of c in the string
  */
 
 char *_strchr(char *s, char c)
@@ -17,6 +18,5 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 			return (&s[i]);
 	}
-	i++;
-	return (&s[i]);
+	return (0);
 }
