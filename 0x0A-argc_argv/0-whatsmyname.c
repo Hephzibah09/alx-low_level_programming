@@ -4,7 +4,7 @@
 /**
  * main - function prints the name of its executable file
  * @argc: argument count
- * @*argv: argument vector
+ * @argv: argument vector
  *
  * Return: program returns 0
  */
