@@ -22,6 +22,11 @@ int main(int argc, char *argv[])
 	}
 
 	num = atoi(argv[1]);
+	if (num < 0)
+	{
+		printf("0\n");
+		return (1);
+	}
 	result = 0;
 
 	while (num) /* num is not zero */
