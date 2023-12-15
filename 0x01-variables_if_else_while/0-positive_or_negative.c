@@ -15,7 +15,8 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	/* the conditional statement to
+	/*
+	 * the conditional statement to
 	 * check if the number is positive, negative or zero
 	 */
 	if (n < 0)
