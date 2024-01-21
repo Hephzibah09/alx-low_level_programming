@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - print fizz, buzz and fizzbuzz if multiple of 3, 5, or both respectively
+ * main - print fizz, buzz and fizzbuzz if multiple of 3, 5,
+ * or both respectively
  * Return: always return 1
  */
 
