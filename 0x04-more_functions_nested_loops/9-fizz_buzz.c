@@ -2,9 +2,10 @@
 
 /**
  * main - print fizz, buzz and fizzbuzz if multiple of 3, 5, or both respectively
+ * Return: always return 1
  */
 
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -22,4 +23,5 @@ void main(void)
 			_putchar(' ');
 	}
 	_putchar('\n');
+	return(0);
 }
