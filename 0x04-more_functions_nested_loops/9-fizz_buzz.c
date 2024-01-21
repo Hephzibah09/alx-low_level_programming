@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * fizz_buss - print fizz, buzz and fizzbuzz if multiple of 3, 5, or both respectively
+ * main - print fizz, buzz and fizzbuzz if multiple of 3, 5, or both respectively
  */
 
-void fizz_buzz(void)
+void main(void)
 {
 	int i;
 
