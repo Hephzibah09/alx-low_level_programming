@@ -20,8 +20,8 @@ int main(void)
 		else
 			printf("%d", i);
 		if (i != 0)
-			_putchar(' ');
+			putchar(' ');
 	}
-	_putchar('\n');
+	putchar('\n');
 	return(0);
 }
