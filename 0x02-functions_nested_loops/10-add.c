@@ -5,7 +5,7 @@
  * Return: sum of the two integer values
  */
 
-int add(int, int)
+int add(int a, int b)
 {
-	return (int + int);
+	return (a + b);
 }
