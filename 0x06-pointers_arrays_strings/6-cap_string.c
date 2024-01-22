@@ -1,26 +1,39 @@
 #include "main.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
- * cap_string - a function that capitalizes all words of a string.
- * @s: string
+ * cap_string - Capitalize all words of a string.
+ * @str: The input string.
  *
- * Return: Capitalised string
+ * Return: Pointer to the modified string.
  */
-
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-	int i;
-	long unsigned int j;
-	char *seperator = ",;.!?(){} \n\t\"";
+	if (str == NULL)
+		return NULL;
 
-	for (i = 0; s[i]; i++)
-		for (j = 0; j < strlen(seperator); j++)
-			if (s[i] == seperator[j])
-			{
-				if (s[i + 1] > 96 && s[i + 1] < 123)
-					s[i + 1] -= 32;
-				if (s[i] == '\t')
-					s[i] = ' ';
-			}
-	return (s);
+	char *result = strdup(str);
+	if (result == NULL)
+		return NULL;
+	int i;
+
+    if (result[0] >= 'a' && result[0] <= 'z')
+    {
+	    result[0] -= ('a' - 'A');
+    }
+
+    for (i = 1; result[i] != '\0'; i++)
+    {
+	    if ((result[i - 1] == ' ' || result[i - 1] == '\t' || result[i - 1] == '\n' ||
+             result[i - 1] == ',' || result[i - 1] == ';' || result[i - 1] == '.' ||
+             result[i - 1] == '!' || result[i - 1] == '?' || result[i - 1] == '"' ||
+             result[i - 1] == '(' || result[i - 1] == ')' || result[i - 1] == '{' ||
+             result[i - 1] == '}') &&
+            (result[i] >= 'a' && result[i] <= 'z'))
+	    {
+		    result[i] -= ('a' - 'A');
+	    }
+    }
+	return result;
 }
