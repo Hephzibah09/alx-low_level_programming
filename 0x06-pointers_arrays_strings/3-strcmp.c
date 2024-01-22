@@ -10,16 +10,11 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i;
-	int diff = 0;
+	while (*s1 && (*s1 == *s2))
+	{
+		s1++;
+		s2++;
+	}
 
-	for (i = 0; s1[i]; i++)
-		if (s1[i] != s2[i])
-			diff = s1[i] - s2[i];
-	if (diff < 0)
-		return (-1);
-	else if (diff > 0)
-		return (1);
-	else
-		return (0);
+	return (*(unsigned char *)s1 - *(unsigned char *)s2);
 }
