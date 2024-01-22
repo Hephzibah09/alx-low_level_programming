@@ -10,7 +10,7 @@
 char *cap_string(char *s)
 {
 	int i;
-	unsignd long int j;
+	unsigned long int j;
 	char *seperator = ",;.!?(){} \n\t\"";
 
 	for (i = 0; s[i]; i++)
